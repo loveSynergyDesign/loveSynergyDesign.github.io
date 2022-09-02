@@ -1,0 +1,53 @@
+.giantScrollSnap{
+    scroll-snap-type: y mandatory;
+}
+
+.scrollContainer{
+    scroll-snap-align:start;
+}
+#firstcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+#secondcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+}
+
+#thirdcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkblue;
+}
+
+#fourthcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: sienna;
+}
+
+#fifthcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: silver;
+}
+
+#sixthcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: sandybrown;
+}
+
+#seventhcontainer{
+    height: 300vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
+body, html {
+    scroll-snap-type: y mandatory;
+  }

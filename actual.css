@@ -1,0 +1,1079 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+
+/* Settings, disable scrollbar and setup font */
+@font-face {
+    font-family: eightbit;
+    src: url(./fonts/PixeloidMono-1G8ae.ttf);
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.usePoppins{
+    font-family: "Poppins", "sans-serif";
+}
+
+.useEightbit{
+    font-family: eightbit!important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: eightbit; */
+    font-family: "Poppins", "sans-serif";
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    color:white;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+
+/* General flex container, hopefully */
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    max-width: 1400px;
+    margin: auto;  
+    gap:10px; 
+}
+
+/* STUFF FOR THE FIRST 2 SECTIONS, icons and text */
+/* styler for the initiral landing page */
+#landingPage{
+    height: 30vh;
+    background-color: black;
+    scroll-snap-align: start;
+}
+
+
+/* Used for the icons in the initial page */
+.iconImages{
+    width:10vw;
+    max-width:max-content;
+    aspect-ratio: auto;
+}
+
+.iconizedText{
+    color: white;
+    font-size: 10vw;
+}
+
+/* Used for the animated text */
+#text {
+    padding: 0 10px 0 0;
+    margin: 0;
+  }
+  
+/* Bliking cursor */
+#cursor {
+    margin: 0;
+    display: inline-block;
+}
+
+/* Holder element for the text animation */
+#textScrollPage{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin: auto;
+    scroll-snap-align: start;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+.sidebarflexholder{
+    transform-origin: 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#giantScrollSnap{
+    scroll-snap-type: y mandatory;
+}
+
+.fixedElement ul li{
+    list-style: none;
+    display: inline-flex;
+}
+
+.fixedElement2{
+    position:fixed;
+    top:90%;
+    left:3%;
+    width: 80vh;
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    z-index:100;
+    transform-origin: 0 0 ;
+    transform: rotate(270deg);
+}
+
+.cutebarlol{
+    background-color: white;
+    width: 10vh;
+    height: 2px;
+    border-radius: 20%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.smalltext{
+    font-size: 0.7vw;
+}
+
+.rotatedcontainer{
+    transform-origin: 0 0 ;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rotatedcontainerholder{
+    transform-origin: 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.active, .fixedElement2 ul li a:hover{
+    opacity: 0.9!important;
+}
+
+.subsettings{
+    opacity: 0.2;
+}
+
+
+/*  //////////////////////////////////////////////////////////////////////  */
+/* Gridbox container */
+
+/* Elements of the gridbox */
+.griditem1{
+    grid-area: gridArea1;
+}
+
+.griditem2{
+    grid-area: gridArea2;
+}
+
+/* The gridcontainer and settings */
+
+.gridContainer{
+    display: grid;
+    background-color:black;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 'gridArea1 gridArea2';
+    padding: 10px;
+}
+
+.gridContainer > div{
+    background-color: black;
+    font-size: 30px;
+    padding: 20px 0;
+
+}
+
+
+/*  setting and for the scrolling text */
+
+#firstgrid2{
+    border: 1px solid white;
+    border-top: 20px solid white;
+    border-radius: 5px;
+}
+
+
+/* Setting for the main message */
+/* Description */
+#description{
+    height: fit-content;
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+#maintitle{
+    font-size: 2vw;
+}
+
+#secondgrid1{
+    font-size: 2vw;
+    text-align: left;
+}
+
+#secondgrid1 img{
+    width: auto;
+    height: 40vw;
+}
+
+#secondgrid2{
+    text-align: left;
+    font-size: 1.5vw;
+    overflow:hidden;
+}
+
+#descriptionWriteUp{
+    font-family: "Poppins", "sans-serif";
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+#loveValues{
+    height: 100vh;
+}
+.panel{
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.panelImages{
+    width: 30vw;
+    padding:2vw;
+    background-color: inherit;
+    aspect-ratio: 1/1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel > p, h2{
+    background-color: inherit;
+    max-width:80vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* //////////////// */
+#synergyDescription{
+    text-align: left;
+    height: fit-content;
+    margin-left: auto;
+    margin-right:auto;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#synergizeGridContainer{
+    display: grid;
+    background-color:black;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: '. .';
+    padding-top:5vh;
+    padding-bottom:5vh;
+}
+
+.synergyWriteUp{
+    text-align: left;
+    font-size: 1vw;
+}
+
+.synergyIcon{
+    width: 8vw;
+    aspect-ratio: auto;
+}
+/* //////////////////////////// */
+#designWelcomePage{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ///////////////////////////////// */
+
+#mentorPage{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    background-color: black;
+    max-width: 1400px;
+    margin: auto;  
+    gap:10px; 
+    height: fit-content;
+}
+
+#mentorPage1{
+    flex: 2 1 auto; 
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#mentorPage2{
+    flex: 3 1 auto;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.padder{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.mentorbox{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2vw;
+    position:relative;
+    width: 20vw;
+    height:20vw;
+    background-color: black;
+    border: 1vw solid white;
+    border-radius:20px;
+    box-shadow: -10px 5px 10px grey;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.mentorbox:hover{
+    top:-40px;
+}
+
+.mentorIcon{
+    width:10vw;
+    aspect-ratio: auto;
+}
+
+#mentorPageGridContainer{
+    display: grid;
+    background-color:black;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: '. .';
+    padding: 10px;
+}
+
+.mentorPageGridItem{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#mentorPageGriditem1{
+    width:auto;
+}
+
+#mentorPageGriditem2{
+    width:auto;
+}
+
+
+/* /////////////////////////// */
+
+#callingCardPage{
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+    color: white;
+    margin: auto;
+    position:relative;
+}
+
+#callingCardImage{
+    position:absolute;
+    top:50%;
+    opacity: 0;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:12vw;
+    aspect-ratio: auto;
+}
+
+#callingCardPreviousImage{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:12vw;
+    aspect-ratio: auto;
+}
+
+.callingCardBox{
+    position:absolute;
+    width:4vw;
+    height: 4vw;
+    top:50%;
+    left:50%;
+    opacity:0;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+}
+
+.callingCardBoxMain{
+    position:absolute;
+    top:50%;
+    left:50%;
+    opacity: 1;
+    transform: translate(-50%,-50%);
+    width:12vw;
+    height: 12vw;
+}
+
+#callingCardExpBox{
+    position:absolute;
+    text-align: center;
+    bottom: 5%;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    opacity: 0;
+}
+
+#goAdventure{
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 10%;
+}
+
+
+#earnYourCallsign{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    opacity: 0;
+}
+
+
+/* /////////////////// */
+
+#loveAnimationPage{
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+    color: white;
+    margin: auto;
+    position:relative;
+    scroll-snap-align: start;
+}
+
+#loveAnimationMainCharacter{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+#originalPosition{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+}
+
+#loveAnimationLeftText{
+    text-align: center;
+    position:absolute;
+    text-align: center;
+    top: 15%;
+    left: 20%;
+    opacity: 0;
+    max-width: 60vw;
+}
+
+
+#loveSymbol{
+    position:absolute;
+    width: 10vw;
+    padding:2vw;
+    background-color: inherit;
+    aspect-ratio: 1/1;
+    margin-left: auto;
+    margin-right: auto;
+    top:75%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#loveBookTitle{
+    position:absolute;
+    font-size: 2vw;
+    background-color: inherit;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top:15%;
+}
+
+#loveBookWriteUp{
+    text-align: center;
+    position:absolute;
+    font-size: 1.5vw;
+    background-color: inherit;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top:85%;
+}
+
+
+#jesterDialouge{
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+    color: white;
+    margin: auto;
+    position:relative;
+}
+
+#jesterDialougeImage{
+    position:absolute;
+    top:50%;
+    right:30%;
+    transform: scaleX(-1);
+    transform: translate(-50%,-50%);
+    width:12vw;
+    opacity: 0;
+    aspect-ratio: auto;
+}
+
+#jesterDialougeMainCharacter{
+    position:absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    width:12vw;
+    aspect-ratio: auto;
+}
+
+#jesterDialougeBox{
+    position:absolute;
+    text-align: center;
+    bottom: 5%;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    opacity: 0;
+}
+/* ///////////////////////////// */
+
+
+#friendsAnimationPage{
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+    color: white;
+    margin: auto;
+    position:relative;
+    scroll-snap-align: start;
+}
+
+#friendsAnimationMainCharacter{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#originalPosition{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+}
+
+#friendsAnimationLeftText{
+    position:absolute;
+    top: 15%;
+    text-align: center;
+    left: 20%;
+    opacity: 0;
+    max-width: 60vw;
+}
+
+.fontsizeController{
+    font-size: 2vw;
+}
+
+#friendsfirstwall{
+    width: 7vw;
+    height: 14vh;
+    position: absolute;
+    top: 70%;
+    right: 13%;
+    transform: translate(-50%, -50%);
+    background-color: #CCCBCB;
+    opacity: 0;
+}
+
+#friendssecondwall{
+        width: 7vw;
+        height: 14vh;
+        position: absolute;
+        top: 70%;
+        right: 20%;
+        transform: translate(-50%, -50%);
+        background-color: #CCCBCB;
+        opacity: 0;
+}
+
+#friendsthirdwall{
+    width: 7vw;
+    height: 14vh;
+    position: absolute;
+    top: 70%;
+    right: 27%;
+    transform: translate(-50%, -50%);
+    background-color: #CCCBCB;
+    opacity: 0;
+}
+
+#friendsfourthwall{
+    width: 7vw;
+    height: 14vh;
+    position: absolute;
+    top: 56%;
+    right: 23%;
+    transform: translate(-50%, -50%);
+    background-color: #CCCBCB;
+    opacity: 0;
+}
+
+#friendsfifthwall{
+    width: 7vw;
+    height: 14vh;
+    position: absolute;
+    top: 56%;
+    right: 16%;
+    transform: translate(-50%, -50%);
+    background-color: #CCCBCB;
+    opacity: 0;
+}
+
+#friendsriver{
+    width: 7vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    right: 14%;
+        opacity: 0;
+}
+
+#friendsfriend1{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.friendIconSetter{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: auto;
+}
+
+.notFriendIconSetter{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: auto;
+}
+
+#friendsfriend2{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top:    50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#friendsfriend3{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#friendsbridge{
+    width: 10vw;
+    height: 24vh;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    background-color: brown;
+    border: 2px solid white; 
+    opacity: 0
+}
+/* ///////////////////////////////// */
+
+#battleAnimationPage{
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+    color: white;
+    margin: auto;
+    position:relative;
+    scroll-snap-align: start;
+}
+
+
+#battleAnimationMainCharacter{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+#battleAnimationfriend1{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+#battleAnimationfriend2{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top:  40%;
+    left: 35%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+#battleAnimationfriend3{
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+#battleAnimationBoss{
+    display:flex;
+    width:14vw;
+    height:28vh;
+    position:absolute;
+    top:40%;
+    right:15%;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+}
+
+#battleAnimationTextBox{
+    position:absolute;
+    bottom: 7%;
+    width: 80%;
+    height: 18%;
+    border-radius:20px;
+    border: 1vw solid white;
+    left: 10%;
+}
+
+#battleAnimationBossHp{
+    position:absolute;
+    width: 30%;
+    height: 10%;
+    background-color: blanchedalmond;
+    left: 10%;
+    top: 10%;
+    transform-origin: left;
+    transform: scaleX(1);
+    opacity: 0;
+}
+
+#battleAnimationOurHp{
+    position:absolute;
+    width: 30%;
+    height: 10%;
+    background-color: blanchedalmond;
+    right: 10%;
+    bottom: 30%;
+    transform-origin: right;
+    transform: scaleX(1);
+    opacity: 0;  
+}
+
+#battleAnimationidea1{
+    width:4vw;
+    height:4vw;
+    position:absolute;
+    top:30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top:auto;
+    opacity: 0;
+    margin-bottom:auto;
+    right:15%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+}
+
+
+#battleAnimationidea2{
+    width:4vw;
+    height:4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:30%;
+    right:15%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: green;
+}
+
+#battleAnimationidea3{
+    width:30vw;
+    height:30vh;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    position:absolute;
+    top:25%;
+    right:10%;
+    opacity: 0;
+    background-color: green;
+}
+
+#battleAnimationidea4{
+    width:7vw;
+    height:7vw;
+    position:absolute;
+    top:43%;
+    right:23%;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+#battleAnimationidea5{
+    width:7vw;
+    height:7vw;
+    position:absolute;
+    top:37%;
+    right:15%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+#battleAnimationidea6{
+    width:7vw;
+    height:7vw;
+    position:absolute;
+    background-color: blue;
+    top:46%;
+    right:15%;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+}
+
+#battleAnimationidea7{
+    width:20vw;
+    height:7vw;
+    position:absolute;
+    background-color: blue;
+    top:46%;
+    right:40%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transform-origin: right;
+    transform: translate(0, -50%);
+}
+
+
+#linkToSection{
+    height: 70vh;
+    top: 30%;
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: space-between;
+    text-align: center;
+    padding-top:2%;
+    padding-bottom:5%;
+}
+
+.imgForLinking{
+    height:100%;
+    aspect-ratio: auto;
+}
+
+#buttonforlinking{
+    margin-left: auto; 
+    margin-right: auto;
+    height: 15%;
+    width:10%;
+}
+
+#buttonstyler{
+    border-radius: 10%;
+    width:100%;
+    height:100%;
+    background-color: aliceblue;
+    color:black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile settings put anything that changes for mobile here */
+@media only screen and (max-width: 1000px) {
+    .gridContainer{
+        grid-template-columns: auto!important;
+        grid-template-areas: 
+        'gridArea1'
+        'gridArea2'
+        '.'!important;
+    }
+
+    #secondgrid2{
+        font-size: 2vw!important;
+    }
+
+        
+    #synergizeGridContainer{
+        grid-template-columns: 1fr;
+        grid-template-areas: '.'!important;
+    }
+
+    .synergyWriteUp{
+        font-size: 2vw;
+    }
+
+    #mentorPage{
+        flex-direction: column;
+    }
+
+    #mentorPage > *{
+        flex: 1 1 auto;
+    }
+
+    .fontsizeController{
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #jesterDialougeImage{
+        width: 30vw;
+        right: 5%;
+    }
+
+    #jesterDialougeMainCharacter{
+        width: 20vw;
+        left: 30%;
+    }
+
+    #loveAnimationMainCharacter{
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #friendsAnimationMainCharacter{
+        width: 12vw;
+        height: 12vw;
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    #friendsfriend1{
+        width: 12vw;
+        height: 12vw;
+        top: 65%;
+        left: 15%;
+    }
+
+    
+    #friendsfriend2{
+        width: 12vw;
+        height: 12vw;
+        top:    50%;
+        left: 25%;
+    }
+    
+    #friendsfriend3{
+        width: 12vw;
+        height: 12vw;
+        top: 50%;
+        left: 15%;
+    }
+
+    #battleAnimationBoss{
+        right:20%;
+    }
+
+    #buttonforlinking{
+        width:50%;
+    }
+}
