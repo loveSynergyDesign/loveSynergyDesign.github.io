@@ -81,7 +81,7 @@ tl2.to("#jesterDialougeText", {text: {value: "Hey wait!"}, duration:0.5, ease: "
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1,  ease: "none"}, 19);
 tl2.to("#jesterDialougeText", {text: {value: "Well no time to waste!"}, duration:1, ease: "none"}, 21);
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1,  ease: "none"}, 23 );
-tl2.to("#jesterDialougeText", {text: {value: "Whenever a scene is done, all the characters will fade away"}, duration:2,  ease: "none"}, 25);
+tl2.to("#jesterDialougeText", {text: {value: "Whenever a scene is done, all the characters will fade away."}, duration:2,  ease: "none"}, 25);
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1,  ease: "none"}, 28 );
 tl2.to("#jesterDialougeText", {text: {value: "So that is when you should slide to the next scene!"}, duration:2,  ease: "none"}, 29);
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1,  ease: "none"}, 32 );
