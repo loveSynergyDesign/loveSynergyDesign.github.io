@@ -1142,4 +1142,9 @@
     #battleAnimationBossHp{
         height: 5%;
     }
+
+    #landingPage{
+        height: 20vh;
+    }
+    
 }
