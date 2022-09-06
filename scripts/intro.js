@@ -8,7 +8,7 @@ gsap.fromTo('#cursor', {autoAlpha: 0, x:10}, {autoAlpha: 1, duration: 0.5, repea
 const tl = gsap.timeline();
 tl.to("#firstgrid2text", {text: {value: " <br>Hello. <br><br> This is your call to adventure! <br><br> Scroll down to go down the rabbit hole!"}, duration:5, delay: 1, ease: "none"});
 
-tl.from("#scrollDownImage", {opacity: 0, duration:1, delay: 1, ease: "none"});
+tl.to("#scrollDownImage", {opacity: 1, duration:1, delay: 1, ease: "none"});
 
 
 ScrollTrigger.create({
@@ -68,7 +68,7 @@ tl2.to(
 
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1, ease: "none"}, 9);
 
-tl2.to('#jesterDialougeText', {text: {value: "And I'll be bringing you through a short journey we prepared!"}, duration:2, ease: "none"}, 11)
+tl2.to('#jesterDialougeText', {text: {value: "And I'll be your guide today!"}, duration:2, ease: "none"}, 11)
 
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1, ease: "none"}, 15);
 
@@ -77,7 +77,7 @@ tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1, ease: "none"}, 15)
 
 // // Character peaces out 
 tl2.to("#jesterDialougeMainCharacter", {x:window.innerWidth*0.5, opacity: 0, duration:2, ease: "none"}, 17);
-tl2.to("#jesterDialougeText", {text: {value: "Hey Wait!"}, duration:0.5, ease: "none"}, 17);
+tl2.to("#jesterDialougeText", {text: {value: "Hey wait!"}, duration:0.5, ease: "none"}, 17);
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1,  ease: "none"}, 19);
 tl2.to("#jesterDialougeText", {text: {value: "Well no time to waste!"}, duration:1, ease: "none"}, 21);
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1,  ease: "none"}, 23 );
