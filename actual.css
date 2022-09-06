@@ -625,6 +625,10 @@
     font-size: 2vw;
 }
 
+.largefontsizeController{
+    font-size: 5vw;
+}
+
 #friendsfirstwall{
     width: 7vw;
     height: 14vh;
@@ -968,7 +972,10 @@
 
 
 #linkToSection{
+    margin-left: auto;
+    margin-right: auto;
     height: 70vh;
+    width:80%;
     top: 30%;
     display:flex;
     flex-direction: column;
@@ -994,13 +1001,33 @@
 #buttonstyler{
     border-radius: 10%;
     width:100%;
-    height:100%;
-    background-color: black;
+    height:10vh;
+    background-color: white;
     border: 10px solid white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+#idSplitContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#idSplitContainer > div{
+    width:48%;
+}
+
+.subContainer{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.subContainer > *{
+    padding: 20px;
 }
 
 
@@ -1048,6 +1075,10 @@
     .fontsizeController{
         font-size: 5vw;
         text-align: center;
+    }
+
+    .largefontsizeController{
+        font-size: 10vw;
     }
 
     #jesterDialougeImage{
