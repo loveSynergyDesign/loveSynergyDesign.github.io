@@ -832,6 +832,15 @@
     opacity: 0;
 }
 
+#bossHpLabel{
+    position:absolute;
+    left: 10%;
+    top: 5%;
+    transform-origin: left;
+    transform: scaleX(1);
+    opacity: 0;
+}
+
 #battleAnimationOurHp{
     position:absolute;
     width: 30%;
@@ -842,6 +851,15 @@
     transform-origin: right;
     transform: scaleX(1);
     opacity: 0;  
+}
+
+#ourHpLabel{
+    position:absolute;
+    right: 10%;
+    bottom: 40%;
+    transform-origin: right;
+    transform: scaleX(1);
+    opacity: 0;
 }
 
 #battleAnimationidea1{
