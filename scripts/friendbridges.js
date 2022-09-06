@@ -79,7 +79,7 @@ tl5.to(
   {
     opacity:1,
     duration: 1,
-    text:"There may be times when you're faced by a brick wall"
+    text:"There may be times when you're faced by a brick wall,"
   },
   0
 );
@@ -626,7 +626,7 @@ tl5.to(
     {
       opacity:1,
       duration: 1,
-      text:"but everyone's also on their own path of self-discovery,"
+      text:"but everyone's also on their own path of self-discovery."
     },
     12.5
   );
@@ -967,7 +967,7 @@ tl5.to(
     {
       opacity:1,
       duration: 1,
-      text:"so stay kind and humble to those you meet every day"
+      text:"So stay kind and humble to those you meet every day,"
     },
     18
   );
@@ -1424,7 +1424,7 @@ tl5.to(
   {
     opacity:1,
     duration: 1,
-    text:"because they may just help you pave DA WAE"
+    text:"because they may just help you pave DA WAE!"
   },
   26
 );
