@@ -46,7 +46,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"You're starting a new journey..."
+    text:"You're starting a new journey,"
   },
   "<"
 );
@@ -109,7 +109,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"one that can be quite scary and unknown"
+    text:"one that can be quite scary and unknown."
   },
   "<"
 );
@@ -174,7 +174,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"But stay optimistic, determined and you may yet see"
+    text:"But stay optimistic, determined and you may yet see,"
   },
   "<"
 );
@@ -238,7 +238,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"the joys that only such a journey could bring"
+    text:"the joys that only such a journey could bring!"
   },
   "<"
 );
@@ -346,7 +346,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"s"
+    text:""
   },
   "<"
 );
@@ -369,7 +369,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"frankly, it just seems to be an inevitability"
+    text:"frankly, it just seems to be an inevitability."
   },
   "<"
 );
@@ -434,7 +434,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"but stay positive and who knows"
+    text:"Try your best to stay positive and who knows,"
   },
   "<"
 );
@@ -563,7 +563,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"Explore and discover what you couldn't before"
+    text:"Explore and discover what you couldn't before,"
   },
   "<"
 );
@@ -693,7 +693,7 @@ tl4.to(
   {
     opacity:1,
     duration: 1,
-    text:"the one that you have always been looking for"
+    text:"the one that you have always been looking for."
   },
   "<"
 );
