@@ -1069,7 +1069,7 @@ tl6.to(
     {
         opacity: 0,duration: 1
     },
-    38
+    29
 );
 
 tl6.to(
@@ -1077,7 +1077,7 @@ tl6.to(
     {
         opacity: 0,duration: 1
     },
-    38
+    29
 );
 
 
