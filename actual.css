@@ -629,6 +629,12 @@
     font-size: 5vw;
 }
 
+.smallfontsizeController{
+    font-size: 1vw;
+}
+
+
+
 #friendsfirstwall{
     width: 7vw;
     height: 14vh;
@@ -1146,5 +1152,13 @@
     #landingPage{
         height: 20vh;
     }
-    
+
+    .smallfontsizeController{
+        font-size: 3vw;
+    }   
+
+    .spacer{
+        margin-top:10vw;
+        margin-bottom: 10vw;
+    }
 }
