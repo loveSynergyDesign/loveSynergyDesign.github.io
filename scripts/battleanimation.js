@@ -110,6 +110,15 @@ tl6.to(
 );
 
 tl6.to(
+    "#bossHpLabel",
+    {
+        opacity: 1,
+        duration:1
+    },
+    3
+);
+
+tl6.to(
     "#battleAnimationOurHp",
     {
         y: window.innerHeight * 0.1
@@ -125,6 +134,15 @@ tl6.to(
         duration:1
     },
     2
+);
+
+tl6.to(
+    "#ourHpLabel",
+    {
+        opacity: 1,
+        duration:1
+    },
+    3
 );
 
 // //////////////////////////////
