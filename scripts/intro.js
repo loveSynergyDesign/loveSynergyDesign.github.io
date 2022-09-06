@@ -6,7 +6,10 @@ gsap.fromTo('#cursor', {autoAlpha: 0, x:10}, {autoAlpha: 1, duration: 0.5, repea
 
 //timeline numberr 1 for the scrolling and fading text
 const tl = gsap.timeline();
-tl.to("#firstgrid2text", {text: {value: " <br><br>Hello. <br><br> This is your call to adventure! <br><br> Scroll down to go down the rabbit hole!"}, duration:5, delay: 1, ease: "none"});
+tl.to("#firstgrid2text", {text: {value: " <br>Hello. <br><br> This is your call to adventure! <br><br> Scroll down to go down the rabbit hole!"}, duration:5, delay: 1, ease: "none"});
+
+tl.from("#scrollDownImage", {opacity: 0, duration:1, delay: 1, ease: "none"});
+
 
 ScrollTrigger.create({
   animation: tl,
