@@ -22,7 +22,7 @@ ScrollTrigger.create({
 const tl2 = gsap.timeline();
 tl2.to('#jesterDialougeImage', {scaleX: -1, opacity: 1}, 1)
 tl2.to("#jesterDialougeBox", {opacity:1, duration: 1}, 1)
-tl2.to("#jesterDialougeText", {text: {value: "YO, glad to see you! Welcome to Design Academy!"}, duration:2, ease: "none"}, 2.5);
+tl2.to("#jesterDialougeText", {text: {value: "Yo, glad to see you! Welcome to Design Academy!"}, duration:2, ease: "none"}, 2.5);
 tl2.to("#jesterDialougeText", {text: {value: ""}, duration:1, ease: "none"}, 5);
 tl2.to('#jesterDialougeText', {text: {value: "I am Jester!"}, duration:1, ease: "none"}, 7)
 
