@@ -87,6 +87,9 @@
     color: white;
     margin: auto;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 /* /////////////////////////////////////////////////////////////////////// */
 
