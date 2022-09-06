@@ -1064,6 +1064,24 @@ tl6.to(
     38
 );
 
+tl6.to(
+    "#bossHpLabel",
+    {
+        opacity: 0,duration: 1
+    },
+    38
+);
+
+tl6.to(
+    "#ourHpLabel",
+    {
+        opacity: 0,duration: 1
+    },
+    38
+);
+
+
+
 
 
 
